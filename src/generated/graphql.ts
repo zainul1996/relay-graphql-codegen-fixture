@@ -26,6 +26,7 @@ export type QueryUserArgs = {
 
 export type User = {
   __typename?: 'User';
+  email?: Maybe<Scalars['String']['output']>;
   id: Scalars['ID']['output'];
   login: Scalars['String']['output'];
   name?: Maybe<Scalars['String']['output']>;
@@ -36,4 +37,4 @@ export type ViewerQueryVariables = Exact<{
 }>;
 
 
-export type ViewerQuery = { __typename?: 'Query', user?: { __typename?: 'User', id: string, login: string, name?: string | null } | null };
+export type ViewerQuery = { __typename?: 'Query', user?: { __typename?: 'User', id: string, login: string, name?: string | null, email?: string | null } | null };

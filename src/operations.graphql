@@ -3,5 +3,6 @@ query Viewer($id: ID!) {
     id
     login
     name
+    email
   }
 }
