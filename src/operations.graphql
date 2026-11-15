@@ -1,0 +1,7 @@
+query Viewer($id: ID!) {
+  user(id: $id) {
+    id
+    login
+    name
+  }
+}
